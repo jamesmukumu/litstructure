@@ -5,7 +5,7 @@
         <div class="flex flex-col items-center text-center">
             <NuxtLink to="/">
                 <img class="w-auto h-7" src="/images/logo_lit.png" alt="logo">
-            </a>
+            </NuxtLink>
 
             <div class="flex flex-wrap justify-center mt-6 -mx-4">
                 <NuxtLink to="/" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </NuxtLink>
