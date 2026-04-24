@@ -19,6 +19,12 @@ return new class extends Migration
             $table->string("image")->nullable(false);
             $table->string("slug")->unique(true)->nullable(false);
             $table->foreignId("users_id")->constrained()->onDelete("cascade");
+            $table->foreignId("clients_id")->constrained()->onDelete('cascade');
+            $table->dateTime("inceptionDate")->nullable(false);
+            $table->dateTime("completionDate")->nullable(false);
+            $table->boolean("isCompleted")->nullable(false)->default(false);
+            $table->boolean("isFinalized")->nullable(false)->default(false);
+            $table->string("documentation")->nullable(false);
         });
     }
 

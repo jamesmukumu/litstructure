@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string("name")->unique(true)->nullable(false);
             $table->string("email")->unique(true)->nullable(false);
             $table->string("password")->nullable(false);
-            $table->string("phonenumber",10)->nullable(false)->unique(true);
+            $table->string("phonenumber",13)->nullable(false)->unique(true);
             $table->boolean("superAdmin")->default(false)->nullable(true);
         });
     }

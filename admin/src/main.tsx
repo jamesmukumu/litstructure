@@ -6,12 +6,18 @@ import "flatpickr/dist/flatpickr.css";
 import App from "./App.tsx";
 import { AppWrapper } from "./components/common/PageMeta.tsx";
 import { ThemeProvider } from "./context/ThemeContext.tsx";
-
+import { Provider } from "react-redux";
+import { persistor, store } from "./redux/store/store.ts";
+import { PersistGate } from "redux-persist/integration/react";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
       <AppWrapper>
-        <App />
+        <Provider store={store}>
+       <PersistGate persistor={persistor}>
+         <App />
+       </PersistGate>
+        </Provider>
       </AppWrapper>
     </ThemeProvider>
   </StrictMode>,

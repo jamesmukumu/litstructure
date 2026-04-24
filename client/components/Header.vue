@@ -36,10 +36,10 @@
       <!-- Desktop Nav -->
       <nav class="hidden lg:flex items-center gap-12 text-base font-medium">
         <NuxtLink to="/" class="hover:text-pr">Home</NuxtLink>
-        <NuxtLink to="/destinations" class="hover:text-pr">Services</NuxtLink>
-        <NuxtLink to="/package/category" class="hover:text-pr">Our Projects</NuxtLink>
+        <NuxtLink to="/#services" class="hover:text-pr">Services</NuxtLink>
+        <NuxtLink to="/#projects" class="hover:text-pr">Our Projects</NuxtLink>
      
-        <NuxtLink to="/about/us" class="hover:text-pr">About Us</NuxtLink>
+        <NuxtLink to="/#about-us" class="hover:text-pr">About Us</NuxtLink>
           <NuxtLink
                     to="/contact"
                     class="px-6 py-2 rounded bg-pr hover:bg-pr transition text-sm font-semibold text-white"
@@ -78,9 +78,9 @@
 
     <ul class="flex flex-col p-6 space-y-6 text-lg font-medium">
       <li><NuxtLink to="/" @click="toggleMenu">Home</NuxtLink></li>
-      <li><NuxtLink to="/package/category">Services</NuxtLink></li>     
-      <li><NuxtLink to="/hotels"  >Projects</NuxtLink></li>
-       <li><NuxtLink to="/destinations" >About us</NuxtLink></li>
+      <li><NuxtLink to="/#services">Services</NuxtLink></li>     
+      <li><NuxtLink to="/#projects"  >Projects</NuxtLink></li>
+       <li><NuxtLink to="/#about-us" >About us</NuxtLink></li>
 
                  <NuxtLink
                     to="/contact"

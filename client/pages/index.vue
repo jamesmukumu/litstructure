@@ -38,18 +38,18 @@
       ></div>
 
       <img
-        src="/images/Home/close-up-man-working-computer-chips_23-2150880925.jpg"
-        alt="Parent holding baby"
+        src="/images/Home/top-view-unrecognizable-hacker-performing-cyberattack-night_1098-18706.jpg"
+        alt="software development"
         class="w-full max-w-lg rounded-2xl shadow-2xl object-cover transform md:scale-105 hover:scale-105 transition duration-500"
       />
     </div>
   </div>
 </section>
 <section>
-<Clients/>
+<Clients :clients="clients"/>
 </section>
 
-<section class="bg-[#E9E5DA] py-20">
+<section class="bg-[#E9E5DA] py-20" id="about-us">
     <div class="max-w-5xl mx-auto text-center px-6">
 
         <!-- Title -->
@@ -92,14 +92,22 @@
 </section>
 
 
-<section>
-<Services/>
+<section id="services">
+<Services :services="services"/>
 </section>
 
-<section>
-<RecentProjects/>
+<section id="projects">
+<RecentProjects :projects="projects"/>
 </section>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+
+let {data,error,pending} = await useFetch("/api/home")
+let clients = ref(data.value.data.clients ?? [])
+let projects = ref(data.value.data.projects ?? [])
+let services = ref(data.value.data.services ?? [])
+console.log(data)
+
+</script>

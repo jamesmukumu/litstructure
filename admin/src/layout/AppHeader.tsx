@@ -6,7 +6,7 @@ import { ThemeToggleButton } from "../components/common/ThemeToggleButton";
 import NotificationDropdown from "../components/header/NotificationDropdown";
 import UserDropdown from "../components/header/UserDropdown";
 
-const AppHeader: React.FC = () => {
+const AppHeader = ({profile}) => {
   const [isApplicationMenuOpen, setApplicationMenuOpen] = useState(false);
 
   const { isMobileOpen, toggleSidebar, toggleMobileSidebar } = useSidebar();
@@ -85,12 +85,12 @@ const AppHeader: React.FC = () => {
 
           <Link to="/" className="lg:hidden">
             <img
-              className="dark:hidden"
+              className="dark:hidden h-10"
               src="/images/biglogo-white.png"
               alt="Logo"
             />
             <img
-              className="hidden dark:block"
+              className="hidden dark:block h-10"
               src="/images/biglogo-white.png"
               alt="Logo"
             />
@@ -160,11 +160,10 @@ const AppHeader: React.FC = () => {
             {/* <!-- Dark Mode Toggler --> */}
             <ThemeToggleButton />
             {/* <!-- Dark Mode Toggler --> */}
-            <NotificationDropdown />
-            {/* <!-- Notification Menu Area --> */}
+           
           </div>
           {/* <!-- User Area --> */}
-          <UserDropdown />
+          <UserDropdown profile={profile} />
         </div>
       </div>
     </header>

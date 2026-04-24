@@ -2,9 +2,7 @@
 @import "@nuxt/ui";
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* Global body styles */
 body {

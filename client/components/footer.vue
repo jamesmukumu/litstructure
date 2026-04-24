@@ -3,17 +3,17 @@
 <footer class="bg-[#003a66] dark:bg-gray-900">
     <div class="container px-6 py-8 mx-auto">
         <div class="flex flex-col items-center text-center">
-            <a href="#">
+            <NuxtLink to="/">
                 <img class="w-auto h-7" src="/images/logo_lit.png" alt="logo">
             </a>
 
             <div class="flex flex-wrap justify-center mt-6 -mx-4">
-                <a href="#" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </a>
-       <a href="#" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Services </a>
+                <NuxtLink to="/" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </NuxtLink>
+       <NuxtLink href="/#services" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Services </NuxtLink>
 
-              <a href="#" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> About Us</a>
+              <NuxtLink href="/#about-us" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> About Us</NuxtLink>
 
-                     <a href="#" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Projects</a>
+                     <NuxtLink to="/#projects" class="mx-4 text-xl text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Projects</NuxtLink>
 
             </div>
 
