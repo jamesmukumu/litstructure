@@ -21,6 +21,27 @@ return err
 }}
 
 
+
+export async function resetPassword(payload:any){
+try{
+let response = await axios.post(`${APP_URL}/reset/password`,payload)
+return response.data
+}catch(err){
+return err
+
+}}
+
+
+
+export async function doresetPassword(payload:any){
+try{
+let response = await axios.put(`${APP_URL}/do/reset/password/${payload.uuid}`,payload)
+return response.data
+}catch(err){
+return err
+
+}}
+
 export async function CreateUser(payload:any){
 try {
 let formData = new FormData()
@@ -111,7 +132,11 @@ return error
 export async function GetSettings(){
 try {
 let token = Cookie.get("auth_token")
-let response = await axios.get(`${APP_URL}/get/settings`)
+let response = await axios.get(`${APP_URL}/get/settings`,{
+headers:{
+"Authorization":`Bearer ${token}`
+}
+})
 return response.data
 } catch (error) {
 return error

@@ -37,6 +37,10 @@ import ProjectsManagement from "./pages/Managements/ProjectsManagement";
 import EditProject from "./pages/Projects/EditProject";
 import ServiceManagement from "./pages/Managements/ServicesManagement";
 import EditService from "./pages/Services/EditService";
+import ResetPassword from "./pages/AuthPages/ResetPassword";
+import DoResetPassword from "./pages/AuthPages/FinalizeReset";
+import SaveEmailTemplate from "./pages/Emails/SaveEmailTemplate";
+import SendBulkEmails from "./pages/Emails/SendBulkEmails";
 
 export default function App() {
   return (
@@ -69,15 +73,16 @@ export default function App() {
        {/* Emails here */}
        <Route path="/send/new/email" element={<SendEmail/>}/>
        <Route path="/create/bulk" element={<CreateBulk/>}/>
-
-            {/* Charts */}
-            <Route path="/line-chart" element={<LineChart />} />
-            <Route path="/bar-chart" element={<BarChart />} />
+        <Route path="/save/email/template" element={<SaveEmailTemplate/>}/>
+        <Route path="/send/bulk" element={<SendBulkEmails/>}/>
+          
           </Route>
 
           {/* Auth Layout */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/reset-password" element={<ResetPassword/>}/>
+          <Route path="/reset/:uuid" element={<DoResetPassword/>}/>
 
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />

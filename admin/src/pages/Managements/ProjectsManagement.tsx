@@ -94,7 +94,7 @@ export default function ProjectsManagement() {
   const docTemplate = (row) =>
     row.documentation ? (
       <a
-        href={`${APP_URL}/storage/${row.documentation}`}
+        href={`https://litstructure-server-master-ozffp0.laravel.cloud/storage/${row.documentation}`}
         target="_blank"
         className="text-blue-600 underline"
       >

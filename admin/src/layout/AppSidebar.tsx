@@ -103,8 +103,8 @@ const AppSidebar: React.FC = () => {
       subItems: [
         { name: "Send Email", path: "/send/new/email" },
         { name: "Create Bulk", path: "/create/bulk" },
-         { name: "Create Template", path: "/",pro:true },
-        { name: "Send Bulk", path: "/send/bulk",pro:true },
+         { name: "Create Template", path: "/save/email/template", },
+        { name: "Send Bulk", path: "/send/bulk" },
          { name: "Send SMS", path: "/",pro:true },
       ],
     },
