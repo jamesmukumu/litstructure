@@ -16,6 +16,7 @@
             'https://litstructure-server-master-ozffp0.laravel.cloud/storage/' +
             client.image
           "
+          :alt="client.slug ?? client.name"
           class="h-20 w-auto object-contain shrink-0"
         />
       </div>

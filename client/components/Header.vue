@@ -15,16 +15,16 @@
         </div>
 
         <div class="flex items-center space-x-5">
-         <a href="https://www.facebook.com/litstructure">
+         <a href="https://www.facebook.com/litstructure" aria-label="Litstructure-Facebook">
            <i class="fa-brands fa-facebook text-xl cursor-pointer"></i>
          </a>
-          <a href="https://www.youtube.com/litstructure">
+          <a href="https://www.youtube.com/litstructure" aria-label="Litstructure-instagram">
             <i class="fa-brands fa-instagram text-xl cursor-pointer"></i>
           </a>
-         <a href="https://twitter.com/litstructure">
+         <a href="https://twitter.com/litstructure" aria-label="Litstructure-twitter">
            <i class="fa-brands fa-twitter text-xl cursor-pointer"></i>
          </a>
-       <a href="https://www.linkedin.com/litstructure">
+       <a href="https://www.linkedin.com/litstructure" aria-label="Litstructute-linkein">
            <i class="fa-brands fa-linkedin text-xl cursor-pointer"></i>
        </a>
         </div>

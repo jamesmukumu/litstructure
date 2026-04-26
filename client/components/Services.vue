@@ -25,7 +25,7 @@
             'https://litstructure-server-master-ozffp0.laravel.cloud/storage/' +
             service.image
           "
-          alt=""
+          :alt="service.slug ?? service.name"
           class="absolute inset-0 w-full h-full object-cover scale-105 group-hover:scale-110 transition duration-500"
         />
 

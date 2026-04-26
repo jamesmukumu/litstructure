@@ -5,13 +5,13 @@
         Recent Projects
       </h2>
 
-      <!-- Projects Mapping -->
+     
       <div
         v-for="(project, index) in projects"
         :key="project.id"
         class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16"
       >
-        <!-- EVEN → Image Left -->
+        
         <template v-if="index % 2 === 0">
           <!-- Image -->
           <div class="flex justify-center">
