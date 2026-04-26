@@ -15,10 +15,18 @@
         </div>
 
         <div class="flex items-center space-x-5">
-          <i class="fa-brands fa-facebook text-xl cursor-pointer"></i>
-          <i class="fa-brands fa-instagram text-xl cursor-pointer"></i>
-          <i class="fa-brands fa-twitter text-xl cursor-pointer"></i>
-          <i class="fa-brands fa-linkedin text-xl cursor-pointer"></i>
+         <a href="https://www.facebook.com/litstructure">
+           <i class="fa-brands fa-facebook text-xl cursor-pointer"></i>
+         </a>
+          <a href="https://www.youtube.com/litstructure">
+            <i class="fa-brands fa-instagram text-xl cursor-pointer"></i>
+          </a>
+         <a href="https://twitter.com/litstructure">
+           <i class="fa-brands fa-twitter text-xl cursor-pointer"></i>
+         </a>
+       <a href="https://www.linkedin.com/litstructure">
+           <i class="fa-brands fa-linkedin text-xl cursor-pointer"></i>
+       </a>
         </div>
       </div>
     </div>

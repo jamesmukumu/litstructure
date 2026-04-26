@@ -19,7 +19,9 @@
 
       <p class="mt-6 text-lg text-gray-600 leading-relaxed">
         Litstructure Technology Limited is a top information technology and web design company in Kenya that provides information communication technology (ICT) solutions, products and services using ultra-modern technologies.
+we provide timely business information solutions. 
       </p>
+      
 
       <a
         href="/contact"
@@ -54,7 +56,7 @@
 
         <!-- Title -->
         <h1 class="text-3xl md:text-4xl font-semibold text-blue-900 leading-snug">
-            Software Development Company in  Kenya |
+            Information Technology in  Kenya |
             <span class="font-bold">Litstructure Technology</span>
         </h1>
 
@@ -62,8 +64,8 @@
         <p class="mt-6 text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
             Liststructure is a tech-solutions company built by passionate individuals,
             dedicated to helping our clients continuously create value for their customers.
-            We believe in transforming ideas into reality through technology. We provide
-            top-notch software solutions tailored to business needs using modern technology stacks.
+            We believe in transforming ideas into reality through technology.Our capacities involve web design & hosting, development, software development, wireless technology, enterprise networking solutions, enterprise management, integration security technology, business intelligence, strategic delivery capabilities and a host of other ICT related services.
+We also provide Strategic Business Trainings in digital marketing, Customer targeting as well as Direct Digital marketing Concept.
         </p>
 
         <!-- Stats Cards -->
@@ -108,6 +110,19 @@ let {data,error,pending} = await useFetch("/api/home")
 let clients = ref(data.value.data.clients ?? [])
 let projects = ref(data.value.data.projects ?? [])
 let services = ref(data.value.data.services ?? [])
-console.log(data)
+
+
+useSeoMeta({
+  title: 'Litstructure Technology Limited',
+  ogTitle: 'Litstructure Technology Limited',
+  description: 'Litstructure Technology Limited is a top information technology and web design company in Kenya that provides information communication technology (ICT) solutions, products and services using ultra-modern technologies.',
+  ogDescription: 'Litstructure Technology Limited is a top information technology and web design company in Kenya that provides information communication technology (ICT) solutions, products and services using ultra-modern technologies.',
+  ogImage: '/images/logo_lit.png',
+  twitterCard: '',
+  twitterTitle:"Litstructure Technology Limited",
+  ogUrl:"https://www.litstructure.com/",
+  ogSiteName:"Litstructure",
+  ogType:"website"
+})
 
 </script>

@@ -201,6 +201,10 @@ const options = [
   { value: "IOT", label: "IOT" },
     { value: "ALP Systems", label: "ALP Systems" },
       { value: "Web Design", label: "Web Design" },
+         { value: "Graphic Design & UI/UX", label: "Graphic design & UI/UX" },
+      { value: "Digital Marketing & SEO", label: "Digital Marketing & SEO" },
+      { value: "IT Consultancy", label: "IT Consultancy" },
+      { value: "Capacity Building", label: "Capacity Building" },
         { value: "Other", label: "Other" },
 ];
 
@@ -252,4 +256,18 @@ saving.value = false
 
   Object.keys(form).forEach((k) => (form[k] = ""));
 };
+
+
+useSeoMeta({
+  title: 'Contact Us',
+  ogTitle: 'Contact Us',
+  description: 'Get in touch with Litstructure Technology Limited in Nakuru, Kenya for reliable ICT solutions, web design, and technology services. Call, email, or visit our office today.',
+  ogDescription: 'Get in touch with Litstructure Technology Limited in Nakuru, Kenya for reliable ICT solutions, web design, and technology services. Call, email, or visit our office today.',
+  ogImage: '/images/logo_lit.png',
+  twitterCard: '',
+  twitterTitle:"Contact",
+  ogUrl:"https://www.litstructure.com/contact",
+  ogSiteName:"Litstructure",
+  ogType:"website"
+})
 </script>
